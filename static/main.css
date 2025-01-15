@@ -1,12 +1,19 @@
 :root {
-    --color-background: #e3e2df;
-    --color-pink:       #e3afbc;
-    --color-light_pink: #ee4c7c;
-    --color-dark-pink:  #9a1750;
-    --color-dark_red:   #5d001f;
+    --color-background:    #e3e2df;
+    --color-element:       #d3d2ce;
+    --color-element-hover: #bebebb;
+    --color-pink:          #e3afbc;
+    --color-light-pink:    #ee4c7c;
+    --color-dark-pink:     #9a1750;
+    --color-dark-red:      #5d001f;
 }
 
 @font-face {
     font-family: 'Queensides'; /*a name to be used later*/
     src: url('fonts/Queensides.ttf'); /*URL to font*/
+}
+
+html, body {
+    background-color: var(--color-background);
+    font-family: 'Queensides';
 }

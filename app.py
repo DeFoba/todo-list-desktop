@@ -9,7 +9,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return render_template('index.html')
+    todo_lists = [x.split('.')[0] for x in listdir(TODO_LISTS_FOLDER)]
+
+    return render_template('index.html', todo_lists=todo_lists)
+
+@app.route('/create')
+def create_todo():
+    return render_template('create.html')
 
 @app.route('/todo/<todo_id>')
 def todo_page(todo_id):

@@ -8,17 +8,24 @@
     <title>Home Page</title>
 </head>
 <body>
-    <!-- <div class="box" style="width: 100px; height: 100px; background-color: #5d001f;"></div> -->
      <header>
-        <!-- <h1>Home Page</h1> -->
         <h1>Simple Todo List</h1>
         <h2>Choice or Create todo</h2>
-        <hr class="header_line">
+        <hr class="line header_line">
      </header>
      <div id="content">
-        <h2>List:</h2>
+        <div id="head_on_list">
+            <h2>List</h2>
+            
+            <div id="tools">
+                <a class="tool" id="create_todo_btn" title="Create new todo." href="/create"><img src="static/media/icons/plus.png" alt="plus"></a>
+            </div>
+        </div>
+        <hr class="line">
         <ul id="todo_list">
-            <li class="todo_element">1 first element</li>
+             {% for todo_el in todo_lists %}
+                <a class="todo_element" href="/todo/{{ todo_el }}">Todo name: {{ todo_el }}</a>
+             {% endfor %}
         </ul>
      </div>
 </body>
