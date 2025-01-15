@@ -1,0 +1,12 @@
+:root {
+    --color-background: #e3e2df;
+    --color-pink:       #e3afbc;
+    --color-light_pink: #ee4c7c;
+    --color-dark-pink:  #9a1750;
+    --color-dark_red:   #5d001f;
+}
+
+@font-face {
+    font-family: 'Queensides'; /*a name to be used later*/
+    src: url('fonts/Queensides.ttf'); /*URL to font*/
+}

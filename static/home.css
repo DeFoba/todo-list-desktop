@@ -1,0 +1,32 @@
+html, body {
+    background-color: var(--color-background);
+    font-family: 'Queensides';
+}
+
+header {
+    width: 100%;
+}
+
+header > h1, header > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-dark_red);
+    font-weight: bold;
+}
+
+header > h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+header > h2 {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.header_line {
+    background-color: var(--color-dark_red);
+    height: 2px;
+    border: 0;
+    width: 30%;
+}
