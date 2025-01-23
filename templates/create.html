@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/create.css">
+    <link rel="stylesheet" href="static/header.css">
     <title>Create Todo</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Create todo</h1>
+        <h2>Enter name and description</h2>
+        <hr class="line header_line">
+     </header>
+     <div id="content">
+        <form action="/createTodoFile" method="post" class="form">
+
+            <div class="input_field">
+                <label for="title">Enter title for new todo:</label>
+                <hr class="line">
+                <input type="text" name="title" class="input_text">
+            </div>
+            
+            <div class="input_field">
+                <label for="description">Enter description for new todo:</label>
+                <hr class="line">
+                <textarea name="description" class="input_text textarea"></textarea>
+            </div>
+
+            <div class="input_field btn_submit_div">
+                <button type="submit" class="btn_submit">Submit</button>
+            </div>
+        </form>
+     </div>
 </body>
 </html>

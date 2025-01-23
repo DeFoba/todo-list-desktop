@@ -1,43 +1,16 @@
-header {
-    width: 100%;
-}
-
-header > h1, header > h2 {
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--color-dark-red);
-    font-weight: bold;
-}
-
-header > h1 {
-    font-size: 3em;
-    margin-bottom: 0;
-}
-
-header > h2 {
-    font-size: 1em;
-    margin-top: 0;
-}
-
-.line {
-    background-color: var(--color-dark-red);
-    height: 2px;
-    border: 0;
-}
-
-.header_line {
-    width: 30%;
-}
-
 #todo_list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
     padding: 0;
     margin: 0;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
 .todo_element {
+    width: 10vw;
+    height: 10vw;
     text-decoration: none;
     text-decoration-line: none;
     color: var(--color-dark-red);
@@ -45,7 +18,13 @@ header > h2 {
     padding: 30px;
     border-radius: 10px;
     font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
     transition: 0.1s;
+    margin: 10px;
 }
 
 .todo_element:hover {
@@ -80,4 +59,22 @@ header > h2 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.img_el_plus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 940px) {
+    .todo_element {
+        width: 90%;
+    }
+
+    .img_el_plus {
+        width: 10%;
+    }
 }

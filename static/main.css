@@ -6,11 +6,17 @@
     --color-light-pink:    #ee4c7c;
     --color-dark-pink:     #9a1750;
     --color-dark-red:      #5d001f;
+    --color-dark-red-hover:#3d0014;
 }
 
 @font-face {
     font-family: 'Queensides'; /*a name to be used later*/
     src: url('fonts/Queensides.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'QueensidesMedium'; /*a name to be used later*/
+    src: url('fonts/QueensidesMedium.ttf'); /*URL to font*/
 }
 
 html, body {
